@@ -1,0 +1,80 @@
+<!DOctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My first site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="public/Style.css" />
+    <script src="public/Controller.js"></script>
+</head>
+
+<body>
+
+    <div class="MainContainer">
+
+        <div class="Container Head">
+
+                <button class="Button" onclick=func()>=</button>
+
+            <div class=" Container ContainerH1">
+
+                {%block head%}
+                {%endblock%}
+
+            </div>
+
+            <div class="Container ContainerHref">
+                <a href="/VideoPage.html" class="Href">Media</a>
+                <a href="/Image.html" class="Href">Photo</a>
+            </div>
+
+        </div>
+
+        <div class="Container Body">
+
+            <div class="Container Main">
+
+                    <div id="columnLeft" class="ColumnLeft">
+
+                    <a href="/Index.html" class="Href">HOME</a>
+                    <a href="/PageTwo.html" class="Href">Page Two</a>
+                    <a href="/PageThree.html" class="Href">Page Three</a>
+
+                </div>
+
+                <div id="centerText" class="CenterText">
+
+                    {%block main%}
+                    {%endblock%}
+
+                </div>
+
+                <div id="columnRight" class="ColumnRight">
+
+                    <p>News</p>
+                    <p>News</p>
+                    <p>News</p>
+                    <p>News</p>
+
+                </div>
+
+            </div>
+
+            <div class="Footer">
+
+                {%block link1%}
+                {%endblock%}
+
+                {%block link2%}
+                {%endblock%}
+
+                <p>Copy right</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

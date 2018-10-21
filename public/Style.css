@@ -1,0 +1,213 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.Container {
+    display: flex;
+    overflow: hidden;
+}
+
+.MainContainer {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: brown;
+    height: 100%;
+    width: 100%;
+}
+
+.ContainerH1 {
+    background: aqua;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerH1 {
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.ContainerHref {
+    background: rgb(233, 7, 101);
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ContainerHref {
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.Head {
+    flex-direction: column;
+    background: yellow;
+    flex-basis: 15%;
+}
+
+.Body {
+    flex-direction: column;
+    background: cornflowerblue;
+    flex-basis: 85%;
+}
+
+.Main {
+    flex-direction: row;
+    background: coral;
+    flex-basis: 90%;
+}
+
+.ColumnLeft {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: #111f3a;
+    flex-basis: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ColumnRight {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: rgb(17, 31, 58);
+    flex-basis: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.CenterText {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    background: rgb(79, 100, 143);
+    flex-basis: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Footer {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    background: chartreuse;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 5%;
+}
+
+.Button {
+    display: none;
+    position: static;
+}
+
+@media (max-width:600px) {
+    .MainContainer {
+        display: block;
+        overflow: auto;
+        flex-direction: column;
+        background: brown;
+        height: 100%;
+        width: 100%;
+    }
+    .Button {
+        display: block;
+        position: static;
+    }
+    .Head {
+        flex-direction: row;
+        background: yellow;
+        flex-basis: 15%;
+    }
+    .Container {
+        display: flex;
+        overflow: hidden;
+    }
+    .ContainerH1 {
+        background: aqua;
+        flex: 2;
+        align-items: center;
+        justify-content: center;
+    }
+    .ContainerH1 {
+        flex-shrink: 1;
+        overflow: hidden;
+    }
+    .ContainerHref {
+        background: rgb(233, 7, 101);
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        display: none;
+    }
+    .ContainerHref {
+        flex-shrink: 1;
+        overflow: hidden;
+        display: none;
+    }
+    .Body {
+        flex-direction: column;
+        background: cornflowerblue;
+        flex-basis: 85%;
+    }
+    .Main {
+        flex-direction: column;
+        background: coral;
+        flex-basis: 90%;
+        justify-content: stretch;
+    }
+    .ColumnRight {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        background: rgb(17, 31, 58);
+        flex-basis: 40%;
+        justify-content: space-around;
+        align-items: center;
+        order: 0;
+    }
+    .ColumnLeft {
+        display: none;
+        flex-basis: 100%;
+    }
+    .CenterText {
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        background: rgb(79, 100, 143);
+        flex-basis: 60%;
+        justify-content: space-around;
+        align-items: center;
+        order: 1;
+    }
+    .Footer {
+        display: block;
+        text-align: center;
+        flex-direction: column;
+        background: chartreuse;
+        overflow: visible;
+        align-items: center;
+        justify-content: space-around;
+        flex-basis: 5%;
+    }
+    .None {
+        display: none
+    }
+    .Visible {
+        display: flex;
+    }
+}
+
+.IMG {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px;
+}
